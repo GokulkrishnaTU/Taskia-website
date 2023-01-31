@@ -10,19 +10,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <style>
+                  .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 40%;
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            .form-control {
+                color: #888;
+                outline: #888;
+                border: solid 1px #888;
+                height: 50px;
+
+            }
+
+            .btn-primary{
+                background-color:  #722ED1;
+                height: 50px;
+            }
+
+            .modal1 {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal-content1 {
+    height: 400px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+}
+            
+            
+            /* The Close Button */
+            .close1 {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close1:hover,
+            .close1:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            .sucess-txt{
+                color: green;
+                text-align: center;
+                margin-top: 260px;
+
+            
+            }
+
+            .success-para{
+                width: 271px;
+    margin-top: 0;
+    margin-bottom: -4rem;
+    font-size: 18px;
+    margin-left: 155px;
+    color: #aaaaaa;
+            }
+
+
+            </style>
+
 </head>
 <body>
-    <img src="./Assets/bg.png" alt="" class="bg-image">
+    <!-- <img src="./Assets/bg.png" alt="" class="bg-image"> -->
 
-    <div class="">
+    <div class="container">
 
-    <div class="main ">
+    <div class="main container">
 
         <div class="header container">
            
            
 
-            <div class="logo   ">
+            <div class="logo pt-">
              <img src="./Assets/Taskia.png" alt="" class="logoImg">  
                       </div>
 
@@ -116,7 +231,7 @@
             <div class="mid-body  container">
                
                 <div class="mid-left">
-                    <img src="./Assets/Image 8.png" alt="">
+                    <img src="./Assets/Image 8.png" alt="" class="img2">
 
                 </div>
 
@@ -125,7 +240,7 @@
 
                     <div class="headingText">
                         <div class="headingBox">
-                        <h1 class="headText">Task managemnt and list tool</h1>
+                        <h1 class="headText pt-5">Task managemnt and list tool</h1>
                         <p class="p1 ">We believe that designing products and services in close partnership with our clinet is the only way to have a real impact on their business</p>
                         <button class="tryButton1" >Try it free</button>
                     </div>
@@ -155,7 +270,7 @@
             </div>
 
             <div class="mid-right">
-            <img src="./Assets/Image 7.png" alt="" style="margin-left: 100px;">
+            <img src="./Assets/Image 7.png" alt="" style="margin-left: 100px;" class="grp-img">
           
         </div>
     </div>
@@ -217,7 +332,7 @@
     </div>
                 <button type="submit" class="login-btn ">LOGIN</button>
                 <h1 class="or">OR</h1>
-                <h1 class="signup-text"><a href=""  class="signup">Sign Up</a></h1>
+                <h1 class="signup-text"><a  class="signup"  id="myBtn">Sign Up</a></h1>
                 <h1 class="login">Already have an account ? <a href="">Login</a></h1>
             </form>
             </div>
@@ -240,7 +355,7 @@
     <h1 class="btm-header">Get better work done</h1>
     <p class="bottom-para">See why millions people across 195 </br> countries use Dash</p>
     <input type="text" placeholder="Name@company.com" class="headInput">
-    <button class="tryButton1" >Try it free</button>
+    <button class="tryButton1"  >Try it free</button>
 </div>
 
 
@@ -261,7 +376,7 @@
 
         <div class="itemsTag">
             <ul>
-           <p>Products</p>
+           <p class="para">Products</p>
 
                 <li class="items" >Connections</li>
                 <li class="items" >Protocols</li>
@@ -275,7 +390,7 @@
 
         <div class="itemsTag">
             <ul>
-                <p>For Developers<p>
+                <p class="para">For Developers<p>
 
                 <li class="items" >Docs</li>
                 <li class="items" >API</li>
@@ -286,7 +401,7 @@
 
         <div class="itemsTag">
             <ul>
-<p>Company</p>
+<p class="para">Company</p>
                 <li class="items" >Careers</li>
                 <li class="items" >Blog</li>
                 <li class="items" >Press</li>
@@ -296,7 +411,7 @@
 
         <div class="itemsTag">
             <ul>
-      <p>Support</p>
+      <p class="para">Support</p>
                 <li class="items" >Help Center</li>
                 <li class="items" >Contact Us</li>
                 <li class="items" >Security Bulletins</li>
@@ -321,6 +436,233 @@
 
 
 </div>
+
+
+<!-- <button id="myBtn">Open PopUP</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h1 >Sign Up</h1 >
+        <p>Please fill in this form to create an account!</p>
+
+    <form action="">
+    
+        <div class="row" >
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+    
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"></label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="User name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"></label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+              </div>
+
+
+
+
+              <div class="col mb-3">
+                <select class="form-control" id="validationCustom04" required>
+                  <option selected disabled value="">Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Day" aria-label="Last name">
+              </div>
+              <div class="col">
+                  <input type="text" class="form-control" placeholder="Year" aria-label="Last name">
+                </div>
+
+
+
+
+                <div class="mb-3">
+                    <select class="form-control" id="validationCustom04" required>
+                      <option selected disabled value="">Gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Mobile number">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                  </div>
+
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit"  id="sucess">Sign up</button>
+                   
+                  </div>
+    
+        </form>
+  </div>
+
+</div>
+
+<div id="myModeldiv" class="modal1">
+
+<div class="modal-content1">
+    <span class="close1">&times;</span>
+    <h1 class="sucess-txt">Success !</h1>
+    <p class="success-para">Congratulations,your account has been successfully created</p>
+  
+</div >
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+    // Get the modal for form
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+//successDiv
+
+    // Get the modal for form
+var modaldiv = document.getElementById("myModeldiv");
+
+// Get the button that opens the modal
+var mybtn = document.getElementById("sucess");
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+mybtn.onclick = function() {
+modaldiv.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spans.onclick = function() {
+modaldiv.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modaldiv) {
+modaldiv.style.display = "none";
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+        
+
+</script>
+
     
 </body>
+
+
 </html>

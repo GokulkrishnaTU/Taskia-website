@@ -1,5 +1,5 @@
 .body {
-  width: 1920px;
+  width: 100%;
   height: 6453px;
 }
 
@@ -20,6 +20,7 @@
   position: absolute;
   top: 0;
   width: 1920px;
+  width: 100%;
   height: auto;
 }
 
@@ -118,7 +119,7 @@
 #card1 {
   background-color: #525FFB;
   margin-left: 100px;
-  width: 800px;
+  width: 1000px;
   height: 554px;
   padding-bottom: 90px;
 }
@@ -128,7 +129,7 @@
   margin-top: 80px;
   margin-left: 100px;
   height: 554px;
-  width: 800px;
+  width: 1000px;
   padding-bottom: 90px;
 }
 
@@ -136,7 +137,7 @@
   background-color: #FFE7AA;
   margin-top: 40px;
   margin-left: 100px;
-  width: 800px;
+  width: 1000px;
   height: 554px;
   padding-bottom: 90px;
 }
@@ -165,6 +166,10 @@
 }
 .card .img {
   margin-top: 25px;
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 274px;
+  width: 220px;
 }
 .card button {
   padding: 8px 25px;
@@ -238,8 +243,8 @@
 
 #text-num {
   position: absolute;
-  margin-left: 562px;
-  margin-top: 680px;
+  margin-left: 434px;
+  margin-top: 711px;
   font-family: normal normal 800 150px/60px Poppins;
   font-size: 150px;
   width: 1072px;
@@ -405,6 +410,7 @@ input:focus {
 .footerLeft {
   display: flex;
   flex-direction: column;
+  margin-left: 260px;
 }
 
 .items {
@@ -437,13 +443,15 @@ ul {
 
 .cardHeading {
   text-align: center;
+  padding: 10px;
 }
 
 .cardPara {
   text-align: center;
-  margin-top: 10px;
-  width: 310px;
+  margin-top: 20px;
   height: 78px;
+  padding: 30px;
+  font-size: 14px;
 }
 
 p {
@@ -453,13 +461,17 @@ p {
 
 .text-field1 {
   visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 1139px;
+  margin-left: 50px;
 }
 
 .text-field {
   visibility: visible;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 390px) {
   body {
     width: 576px;
     height: 6453px;
@@ -488,6 +500,7 @@ p {
   .allCards {
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
   .bg-image {
     width: 100%;
@@ -523,9 +536,8 @@ p {
     border-color: dodgerblue;
     border-radius: 30px;
     position: absolute;
-    left: 229px;
+    left: 170px;
     margin-top: 70px;
-    margin-left: 20px;
   }
   #card1 {
     background-color: #525FFB;
@@ -533,6 +545,7 @@ p {
     width: 300px;
     height: 454px;
     padding-bottom: 90px;
+    border-radius: 10px;
   }
   #card2 {
     background-color: #E9F0FF;
@@ -555,5 +568,246 @@ p {
   }
   .text-field1 {
     visibility: visible;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 137px;
+  }
+  .headingText {
+    width: 50%;
+    margin-top: 165px;
+    font-size: 10px;
+  }
+  .headText {
+    font-size: 29px;
+    width: 263px;
+    text-align: center;
+  }
+  .p1 {
+    width: 261px;
+    text-align: center;
+  }
+  .img2 {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  #text-num {
+    position: absolute;
+    /* margin-left: 562px; */
+    margin-top: 680px;
+    font-family: normal normal 800 150px/60px Poppins;
+    font-size: 75px;
+    padding: 109px;
+    width: 1072px;
+    height: 203px;
+    color: #525FFB;
+  }
+  .bottom-head {
+    /* margin-left: 82px; */
+    text-align: center;
+    /* width: 600px; */
+    font-size: 20px;
+    padding: 12px;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardPara {
+    text-align: center;
+    margin-top: -27px;
+    height: 78px;
+    padding: 30px;
+    font-size: 14px;
+  }
+  .img2 {
+    width: 300px;
+    margin-left: 132px;
+    margin-top: 148px;
+  }
+  .grp-img {
+    margin-top: 180px;
+    width: 342px;
+    margin-left: 100px;
+    size: 32px;
+    height: 304px;
+  }
+  #text-num {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 680px;
+    font-family: normal normal 800 150px/60px Poppins;
+    font-size: 75px;
+    padding: 109px;
+    /* width: 1072px; */
+    height: -49px;
+    color: #525FFB;
+  }
+  .bottom-logo {
+    width: 163px;
+    margin-left: -106px;
+  }
+  .smIcons {
+    margin-left: -53px;
+    width: 161px;
+    margin-top: 75px;
+    padding-bottom: 60px;
+  }
+  .rightImg1 {
+    position: absolute;
+    right: -48px;
+    width: 77px;
+    margin-top: 392px;
+  }
+  .leftImg1 {
+    width: 109px;
+    position: absolute;
+    left: 63px;
+    margin-top: 392px;
+  }
+  .rightImg2 {
+    position: absolute;
+    right: 230px;
+    margin-top: 645px;
+    width: 51px;
+  }
+  .leftImg3 {
+    position: absolute;
+    left: 107px;
+    margin-top: 992px;
+  }
+  .rightImg3 {
+    position: absolute;
+    right: -67px;
+    width: 102px;
+    margin-top: 900px;
+  }
+  #text-heading {
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 174px;
+    width: 231px;
+    text-align: center;
+  }
+  .logo1 {
+    width: 60px;
+  }
+  .logo2 {
+    width: 60px;
+    margin-left: 160px;
+  }
+  .logo3 {
+    width: 60px;
+  }
+  .logo4 {
+    width: 60px;
+    margin-left: 160px;
+  }
+  .logo-grid2 {
+    margin-left: 150px;
+  }
+  #bottom-header {
+    overflow: hidden;
+    text-align: center;
+    color: #8989A2;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 250px;
+    margin-left: 143px;
+  }
+  .bottom-head {
+    text-align: center;
+    width: 356px;
+    font-size: 20px;
+    padding: 12px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .tryButton {
+    margin-left: 178px;
+    margin-top: 50px;
+  }
+  .logoImg {
+    margin-left: 150px;
+  }
+  .section {
+    height: 633px;
+    width: 350px;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #FFFFFF;
+    border: 1px #F9F0FF;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .form-head {
+    text-align: center;
+  }
+  .or {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 30px;
+  }
+  .login {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 30px;
+  }
+  .signup {
+    text-align: center;
+    padding-left: 197px;
+    font-size: 32px;
+    text-decoration: none;
+  }
+  .signup-text {
+    margin-top: 50px;
+  }
+  .input-field {
+    width: 80%;
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  .login-btn {
+    width: 205px;
+    margin-top: 60px;
+    height: 50px;
+    margin-left: 60px;
+    background-color: #722ED1;
+    color: #8989A2;
+  }
+  .inp-div {
+    border: solid 1px;
+    background-color: white;
+    width: 75%;
+  }
+  .input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    padding-top: 88px;
+  }
+  .signup {
+    text-align: center;
+    padding-left: 111px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .itemsTag {
+    margin-left: 10px;
+    text-align: center;
+  }
+  ul {
+    margin-left: 160px;
+  }
+  .para {
+    width: 130px;
+    text-align: center;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
